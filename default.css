@@ -1,0 +1,49 @@
+:root {
+  --white: #fff;
+  --light-gray: #c7eaef;
+  --gray: #d2d2d2;
+  --black: #000;
+  --lightblue: #000000;
+
+  --font-color-base: #666;
+  --font-color-dark: #212529;
+  --font-color-light: #b0aebe;
+  --font-color-link: #57a6ff;
+
+  --footer: #34314b;
+  --footer-base: #2e2b45;
+  --contrast: rgba(rgb(247, 247, 243));
+  --success: #64ecf5;
+  --danger: #ff8b8d;
+  --grad-1: #a1ecff;
+  --grad-2: #8293a4;
+  --grad-3: #c7eaef;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+
+    margin: 5px 5px 5px 5px;
+    background-color: rgb(247, 247, 243);
+  }
+
+  .top-ContactBar{
+
+    font-size: 26px;
+    text-align: right;
+    word-spacing: 20px;
+    font-weight: 600;
+
+   
+    
+
+}
+
+nav a:hover {
+    color: black;
+   text-decoration: none;
+
+}
