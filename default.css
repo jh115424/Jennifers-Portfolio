@@ -21,29 +21,20 @@
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-
-    margin: 5px 5px 5px 5px;
-    background-color: rgb(247, 247, 243);
-  }
-
-  .top-ContactBar{
-
-    font-size: 26px;
-    text-align: right;
-    word-spacing: 20px;
-    font-weight: 600;
-
-   
-    
-
+  scroll-behavior: smooth;
 }
 
-nav a:hover {
-    color: black;
-   text-decoration: none;
+body {
+    width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(247, 247, 243);
+ 
+  
+}
 
+
+nav a:hover,
+.noDecoration {
+  color: blue;
 }

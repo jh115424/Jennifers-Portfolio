@@ -10,14 +10,54 @@
 </head>
 
 <body>
-    <div class="top-ContactBar">
-        <nav>
-            <a href="./projects.html">Projects</a>
-            <a href="./blogs.html">Blogs</a>
-            <a href="./contact.html">Contact</a>
+    <div>
+
+        <nav id="topNav" class="top-ContactBar-sticky" aria-expanded="false" aria-controls="contactDropdown">
+            <a class="noDecoration" href="./projects.html">Projects</a>
+            <a class="noDecoration" href="./blogs.html">Blogs</a>
+            <a class="noDecoration" href="./contact.html">Contact</a>
         </nav>
+        <img src="/images/trigram.png" alt="" class="trigram">
+
     </div>
-   
+    <header class="background-image">
+        <div class="topIntro-Container">
+            <div class="intro-section">
+                <h2>Hi, I am Jennifer,<br>Full-Stack Web Developer</h2>
+                <p>I am a Full-Stack Web Developer originally from Milwaukee,
+                    Wisconsin and Chicago, Illinois in training at Devslopes Code Academy. </p>
+            </div>
+            <!-- <div class="intro-picture">
+            <img src="/images/header-picture.jpg" class="me">
+        </div> -->
+        </div>
+    </header>
+
+
+
+
+    <script>
+
+
+        const nav = document.getElementById("topNav");
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+
+        }
+
+
+        const navButton = document.querySelector('button[aria-expanded]');
+        function toggleNav({ target }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+        }
+        navButton.addEventListener('click', toggleNav);
+    </script>
+
 
 
 
