@@ -9,14 +9,14 @@
   background-image: url(/images/top-background\ image.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 40%;
+  background-position: 50% 66%;
 }
 
 .top-ContactBar-sticky,
 .noDecoration {
   transition: ease-in-out 0.3s;
   color: white;
-  font-size: 26px;
+  font-size: 33px;
   text-align: right;
   float: right;
   word-spacing: 20px;
@@ -63,6 +63,14 @@
   border-radius: 50%;
   height: 400px;
   width: 400px;
+}
+
+
+.recent-posts-box {
+
+    height: 500px;
+    width: 100%;
+    background-color: #74afea38;
 }
 
 
