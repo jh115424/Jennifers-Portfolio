@@ -11,18 +11,16 @@
 
 <body>
     <div>
-
         <nav id="topNav" class="top-ContactBar-sticky" aria-expanded="false" aria-controls="contactDropdown">
             <a class="noDecoration" href="./projects.html">Projects</a>
             <a class="noDecoration" href="./blogs.html">Blogs</a>
             <a class="noDecoration" href="./contact.html">Contact</a>
         </nav>
         <img src="/images/trigram.png" alt="" class="trigram">
-
     </div>
+
     <div class="top-image">
         <img src="/images/top-background image.jpeg" class="background-image">
-
         <div class="topIntro-Container">
             <div class="intro-section">
                 <h2>Hi, I am Jennifer,<br>Full-Stack Web Developer</h2>
@@ -35,17 +33,44 @@
         </div>
     </div>
 
-
-
     <div class="recent-posts-box">
         <p class="section-titles">Recent posts</p>
         <div class="cards">
-            <div class="card-post-header"></div>
-            <div class="card-post-header"></div>
+            <div class="card-post-header">
+                <div class="card-content">
+                    <h3 class="card-title">How to Use Div's in Web Development</h3>
+                    <p class="card-date">June 18th, 2023 | 1 min read | HTML, CSS</p>
+                    <p class="description">I gave a brief description on what the different ways are to use Div's and
+                        how
+                        they can make layout design easier to put blocks of code.</p>
+                    <a
+                        href="https://medium.com/@jenniferehodge1/how-to-use-divs-in-web-development-9d24040593c2">Medium.com</a>
+                </div>
+            </div>
+
+            <div class="card-post-header">
+                <div class="card-content">
+                    <h3 class="card-title">Responsive Design made Simple</h3>
+                    <p class="card-date">June 18th, 2023 | 3 min read | HTML, CSS</p>
+                    <p class="description">There are different techniques to making websites responsive, but this
+                        article
+                        discuss the 3 main common sizes developers use to make a website fit to the viewport screen
+                        sizes of Desktop,
+                        tablet and mobile sizes.</p>
+
+                    <a href="https://medium.com/@jenniferehodge1/responsive-design-made-simple-ada9932c9b57">Medium.com</a>
+                </div>
+            </div>
         </div>
-
-
     </div>
+
+    <!-- <div card="card-content">
+                    <h3 class="card-title">Creating my version of YouTube</h3>
+                    <p class="card-date">March 12th, 2023 | HTML, CSS</p>
+                    <p class="description">I re-created the YouTube website using HTML and CSS<br>for my 1st big project
+                        at Devslopes Code Academy.<br>
+                        I used different techniques including Flexbox and Advanced Flexbox.</p>
+                </div> -->
 
 
 
@@ -62,8 +87,6 @@
             }
 
         }
-
-
         const navButton = document.querySelector('button[aria-expanded]');
         function toggleNav({ target }) {
             const expanded = target.getAttribute('aria-expanded') === 'true' || false;
@@ -71,11 +94,6 @@
         }
         navButton.addEventListener('click', toggleNav);
     </script>
-
-
-
-
-
 </body>
 
 </html>
