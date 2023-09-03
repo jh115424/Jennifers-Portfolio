@@ -23,7 +23,6 @@
 
 .top-ContactBar-sticky,
 .noDecoration {
-
   transition: ease-in-out 0.3s;
   box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
   color: white;
@@ -87,6 +86,9 @@
   height: 350px;
   margin-top: 20px;
   background-color: white;
+  box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
+  color: white;
+  background-color: #d3d3d37d;
 }
 
 .recent-posts-box {
@@ -108,11 +110,12 @@
 }
 
 .card-title {
-  font-size: 30px;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .card-date {
-  font-size: 26px;
+  font-size: 27px;
   color: blue;
 }
 
@@ -123,10 +126,99 @@
   font-weight: 500;
 }
 
+.description-two {
+  font-size: 22px;
+  width: 56%;
+  color: #4a4e69;
+  font-weight: 500;
+}
+
 a {
   font-size: 26px;
   color: black;
   font-weight: 400;
+}
+
+.featured-main-container {
+  margin-left: 200px;
+  gap: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 90%;
+  margin-left: 0px;
+}
+
+.featured {
+  display: flex;
+}
+
+.section-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-titles-two {
+  font-size: 42px;
+  margin-left: 200px;
+}
+
+.thumbnails {
+  height: 300px;
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 10px 10px blue;
+}
+
+.projects {
+  display: flex;
+}
+
+.project-intro {
+  font-size: 36px;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.project-date {
+  display: flex;
+}
+
+.project-title {
+  font-size: 32px;
+}
+
+.project-para {
+  font-weight: 600;
+  font-size: 27px;
+}
+
+.project-year {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+button {
+  height: 40px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  font-size: 24px;
+}
+
+.button {
+  display: flex;
+  width: 100px;
+  font-size: 25px;
+  font-weight: 600;
+  justify-content: center;
+  border-radius: 30px;
+  color: blue;
+  font-weight: 700;
 }
 
 /* TABLET SIZE */
