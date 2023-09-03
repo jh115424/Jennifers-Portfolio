@@ -12,9 +12,11 @@
 <body>
     <div>
         <nav id="topNav" class="top-ContactBar-sticky" aria-expanded="false" aria-controls="contactDropdown">
-            <a class="noDecoration" href="./projects.html">Projects</a>
-            <a class="noDecoration" href="./blogs.html">Blogs</a>
-            <a class="noDecoration" href="./contact.html">Contact</a>
+            <a class="noDecoration" href="/index.html">Home</a>
+            <a class="noDecoration" href="https://minimallista.vercel.app/">Minimillista</a>
+            <a class="noDecoration" href="https://saas-e9hb.vercel.app/">Saas</a>
+            <a class="noDecoration" href="https://my-chicago.vercel.app/">Chicago</a>
+            <a class="noDecoration" href="https://mytube-e6zu.vercel.app/">MyTube</a>
         </nav>
         <img src="/images/trigram.png" alt="" class="trigram">
     </div>
@@ -27,9 +29,6 @@
                 <p>I am a Full-Stack Web Developer originally from Milwaukee,
                     Wisconsin and Chicago, Illinois in training at Devslopes Code Academy. </p>
             </div>
-            <!-- <div class="intro-picture">
-            <img src="/images/header-picture.jpg" class="me">
-           </div> -->
         </div>
     </div>
 
@@ -65,15 +64,11 @@
         </div>
     </div>
 
-
-
     <p class="section-titles-two">Featured projects</p>
 
     <div class="featured-main-container">
         <div class="featured">
-
             <img src="/images/Minimillista.jpeg" class="thumbnails">
-
             <div class="project-intro">
                 <h2 class="project-title">Interior Design</h2>
                 <div class="project-year"><button>2023</button>
@@ -84,29 +79,20 @@
                         grid The layout is clean, simple, yet professional. </p>
                 </div>
             </div>
-
         </div>
-        <hr>
-
 
         <div class="featured">
-
             <img src="/images/Saas-image(2).jpeg" class="thumbnails">
-
             <div class="project-intro">
                 <h2 class="project-title"> SaaS (Software as a service) </h2>
                 <div class="project-year"><button>2023</button>
                     <p class="project-para">Web Development Service</p>
                 </div>
                 <div class="paragraph">
-                    <p class="description-two">This Interior Design project demonstrates the use of Flexbox and
-                        grid The layout is clean, simple, yet professional. </p>
+                    <p class="description-two">This was my second big project I did at Devslopes Code Academy. </p>
                 </div>
             </div>
-
         </div>
-        <hr>
-
 
         <div class="featured">
 
@@ -118,52 +104,81 @@
                     <p class="project-para">Personal Blog</p>
                 </div>
                 <div class="paragraph">
-                    <p class="description-two">This Interior Design project demonstrates the use of Flexbox and
-                        grid The layout is clean, simple, yet professional. </p>
+                    <p class="description-two">Living in Chicago for a part of my life, I did this project to
+                        demonstrate that I can also do blogs for clients </p>
                 </div>
             </div>
 
         </div>
-        <hr>
-
 
         <div class="featured">
 
             <img src="/images/Mytube (2).png" class="thumbnails">
-
             <div class="project-intro">
                 <h2 class="project-title">My Tube</h2>
                 <div class="project-year"><button>2023</button>
                     <p class="project-para">You Tube Mock-up</p>
                 </div>
                 <div class="paragraph">
-                    <p class="description-two">This Interior Design project demonstrates the use of Flexbox and
-                        grid The layout is clean, simple, yet professional. </p>
+                    <p class="description-two">Doing a mock-up of Youtube was a lot of fun! </p>
                 </div>
             </div>
-
         </div>
     </div>
 
+    <hr>
+    <div class="intro-picture">
+        <img src="/images/me.jpg" class="me">
+        <h2 class="contact">Hire me!</h2>
+    </div>
 
+    <footer class="footer-main-container">
+        <div class="grand-contact-container">
+            <div class="address-info">
+                <div class="contact-info">
+                    <img src="/images/arrow.png" class="icons">
+                    <p class="address">4313 N. 18th Street<br>Milwaukee, WI 53209</p>
+                </div>
+                <div class="contact-info">
+                    <img src="/images/phone.png" class="icons">
+                    <a href="tel:+1-414-779-6301"
+                        onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});">
+                        <p class="call">1-414-779-6301</p>
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <img src="/images/mail.png" class="icons">
+                    <a href="https://outlook.office.com/mail/" class="email">Jennifer.hodge@russdarrow.com</a>
+                </div>
+            </div>
+            <div class="social-media">
+                <div class="contact-info">
+                    <img src="/images/facebook.png" class="icons"><a href="https://www.facebook.com/jennifer.hodge.520"
+                        class="media">facebook.com/jennifer.hodge.520</a>
+                </div>
+                <div class="contact-info">
+                    <img src="/images/twitter.png" class="icons"><a href="https://twitter.com/Jennife18238325"
+                        class="media">twitter.com/Jennife18238325</a>
+                </div>
+                <div class="contact-info">
+                    <img src="/images/instagram.png" class="icons"><a href="https://www.instagram.com/jh115424/"
+                        class="media">instagram.com/jh115424/</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <hr>
+    <footer class="copyright-container">
+        <div class="legal-stuff">
+            <h3>
+                <span>&copy;</span>Jennifer's Portfolio.&nbsp; &nbsp; 2023 All Rights
+                Reserved
+            </h3>
 
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </footer>
     <script>
-
-
         const nav = document.getElementById("topNav");
         window.onscroll = function () {
             if (window.pageYOffset > 100) {
@@ -179,6 +194,7 @@
             navButton.setAttribute('aria-expanded', !expanded);
         }
         navButton.addEventListener('click', toggleNav);
+
     </script>
 </body>
 

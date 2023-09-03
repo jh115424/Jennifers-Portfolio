@@ -69,13 +69,6 @@
   display: flex;
 }
 
-.me {
-  box-shadow: 10px 10px lightblue;
-  border-radius: 50%;
-  height: 400px;
-  width: 400px;
-}
-
 .cards {
   display: flex;
   gap: 50px;
@@ -139,26 +132,18 @@ a {
   font-weight: 400;
 }
 
-.featured-main-container {
-  margin-left: 200px;
-  gap: 100px;
-  display: flex;
-  flex-direction: column;
-}
 
-hr {
-  width: 90%;
-  margin-left: 0px;
+.featured-main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 100px;
+  justify-items: center;
 }
 
 .featured {
   display: flex;
-}
-
-.section-titles {
-  display: flex;
-  flex-direction: column;
-
+  margin-left: 200px;
 }
 
 .section-titles-two {
@@ -169,10 +154,10 @@ hr {
 }
 
 .thumbnails {
-  height: 300px;
-  width: 600px;
+  width: 625px;
   border-radius: 20px;
   box-shadow: 10px 10px blue;
+
 }
 
 .projects {
@@ -199,9 +184,14 @@ hr {
 }
 
 .project-year {
-  display: flex;
+
   align-items: center;
   gap: 40px;
+}
+
+hr { 
+    border-bottom: dotted;
+    margin-top: 50px;
 }
 
 button {
@@ -223,6 +213,111 @@ button {
   color: blue;
   font-weight: 700;
 }
+
+.grand-contact-container {
+
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.footer-main-container {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    width: 100%;
+    gap: 200px;
+    height: 600px;
+    margin-top: 120px;
+}
+
+.contact {
+    color: white;
+    display: flex;
+    margin-top: 45px;
+    gap: 10px;
+    margin-left: 20px;
+
+}
+
+.intro-picture {
+    display: flex;
+    flex-direction: row;
+    margin-top: 130px;
+    position: absolute;
+    align-items: center;
+}
+
+.me {
+
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 100%;
+}
+
+.contact-info {
+
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    flex-direction: row;
+}
+
+.icons {
+
+    width:  50px;
+    height: 50px;
+
+}
+
+.address-info {
+  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+div .call {
+
+    color: blue;
+}
+
+.address, .email, .call, .media {
+
+    color: white;
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+.social-media {
+
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright-container {
+
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* TABLET SIZE */
 
@@ -294,6 +389,57 @@ button {
     font-weight: bold;
     width: 50%;
   }
+
+  .featured-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .thumbnails {
+    height: 300px;
+  }
+
+  .featured {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-titles-two {
+    margin-left: 80px;
+    width: 600px;
+  }
+
+  .project-year {
+    display: flex;
+  }
+
+  .footer-main-container {
+
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
+  }
+
+  .grand-contact-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+  }
+
+
+
+  .address-info {
+margin-top: 300px;
+
+  }
+
+
+
+
+
+
+
 }
 
 /* PHONE SIZE */
@@ -305,8 +451,8 @@ button {
   }
 
   .background-image {
-    height: 300px;
-    width: 340px;
+    height: 250px;
+    width: 305px;
   }
 
   [aria-controls="false"] ~ nav {
@@ -354,8 +500,64 @@ button {
     height: 500px;
   }
 
-  /* .me {
+  .section-titles-two {
+    width: 300px;
+    margin-left: 25px;
+  }
+
+  .thumbnails {
+    width: 300px;
+    height: 200px;
+    margin-left: -50px;
+  }
+
+  .description-two {
+    width: 100%;
+  }
+
+  .project-intro {
+    margin-left: -30px;
+  }
+
+  .project-title {
+    font-size: 25px;
+  }
+
+  .project-para {
+    font-size: 20px;
+  }
+
+  .project-year {
+    gap: 5px;
+  }
+
+  .me {
     width: 200px;
     height: 200px;
-  } */
+  } 
+
+  .featured-main-container {
+
+    width: 100%;
+  }
+
+  .address-info {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address, .email, .call, .media {
+
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.icons {
+
+    width: 40px;
+    height: 40px;
+}
 }
