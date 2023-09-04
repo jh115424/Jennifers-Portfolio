@@ -220,10 +220,8 @@ button {
 
 .grand-contact-container {
   display: flex;
-  align-items: center;
   gap: 200px;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .footer-main-container {
@@ -232,7 +230,7 @@ button {
   justify-content: center;
   width: 100%;
   gap: 200px;
-  height: 500px;
+  height: 580px;
   margin-top: 120px;
 }
 
@@ -416,12 +414,14 @@ div .call {
   .footer-main-container {
     display: flex;
     flex-direction: column;
-    height: 1400px;
+    height: 1000px;
   }
 
   .grand-contact-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
     gap: 0px;
   }
 
@@ -527,12 +527,6 @@ button {
   font-size: 22px;
 }
 
-
-.footer-main-container {
-
-
-}
-
 .legal-stuff {
   font-size: 18px;
 }
@@ -610,12 +604,12 @@ button {
     margin-left: 25px;
   }
 
-  .thumbnails, .thumbnails-two {
+  .thumbnails,
+  .thumbnails-two {
     width: 326px;
     height: 200px;
     margin-left: -50px;
   }
-
 
   .featured {
     margin-left: 65px;
@@ -628,7 +622,8 @@ button {
     margin-left: 5px;
   }
 
-  .description-two, .featured-main-container {
+  .description-two,
+  .featured-main-container {
     width: 100%;
   }
 
@@ -652,11 +647,14 @@ button {
     gap: 5px;
   }
 
+  .footer-main-container {
+    height: 950px;
+  }
+
   .me {
     width: 100px;
     height: 100px;
   }
-
 
   .address-info {
     display: flex;
@@ -664,7 +662,6 @@ button {
   }
 
   .call {
-
     margin-left: 88px;
   }
 
@@ -681,6 +678,4 @@ button {
     width: 40px;
     height: 40px;
   }
-
-
 }
