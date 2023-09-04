@@ -132,7 +132,6 @@ a {
   font-weight: 400;
 }
 
-
 .featured-main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -157,7 +156,6 @@ a {
   width: 625px;
   border-radius: 20px;
   box-shadow: 10px 10px blue;
-
 }
 
 .projects {
@@ -184,14 +182,13 @@ a {
 }
 
 .project-year {
-
   align-items: center;
   gap: 40px;
 }
 
-hr { 
-    border-bottom: dotted;
-    margin-top: 50px;
+hr {
+  border-bottom: dotted;
+  margin-top: 50px;
 }
 
 button {
@@ -215,109 +212,87 @@ button {
 }
 
 .grand-contact-container {
-
-    display: flex;
-    align-items: center;
-    gap: 200px;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-
 .footer-main-container {
-    display: flex;
-    background-color: black;
-    justify-content: center;
-    width: 100%;
-    gap: 200px;
-    height: 600px;
-    margin-top: 120px;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  width: 100%;
+  gap: 200px;
+  height: 600px;
+  margin-top: 120px;
 }
 
 .contact {
-    color: white;
-    display: flex;
-    margin-top: 45px;
-    gap: 10px;
-    margin-left: 20px;
-
+  color: white;
+  display: flex;
+  margin-top: 45px;
+  gap: 10px;
+  margin-left: 20px;
 }
 
 .intro-picture {
-    display: flex;
-    flex-direction: row;
-    margin-top: 130px;
-    position: absolute;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 130px;
+  position: absolute;
+  align-items: center;
 }
 
 .me {
-
-    width: 200px;
-    height: 200px;
-    border: 5px solid white;
-    border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 100%;
 }
 
 .contact-info {
-
-    display: flex;
-    align-items: center;
-    font-size: 45px;
-    flex-direction: row;
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  flex-direction: row;
 }
 
 .icons {
-
-    width:  50px;
-    height: 50px;
-
+  width: 50px;
+  height: 50px;
 }
 
 .address-info {
-  
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 div .call {
-
-    color: blue;
+  color: blue;
 }
 
-.address, .email, .call, .media {
-
-    color: white;
-    font-size: 25px;
-    margin-left: 25px;
+.address,
+.email,
+.call,
+.media {
+  color: white;
+  font-size: 25px;
+  margin-left: 25px;
 }
 
 .social-media {
-
-    gap: 50px;
-    display: flex;
-    flex-direction: column;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .copyright-container {
-
-    text-align: center;
-    font-size: 24px;
+  text-align: center;
+  font-size: 24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* TABLET SIZE */
 
@@ -414,32 +389,128 @@ div .call {
   }
 
   .footer-main-container {
-
     display: flex;
     flex-direction: column;
     height: 1100px;
   }
 
   .grand-contact-container {
-
     display: flex;
     flex-direction: column;
     gap: 150px;
   }
 
-
-
   .address-info {
-margin-top: 300px;
+    margin-top: 300px;
+  }
+}
 
+@media (max-width: 400px) {
+  .trigram {
+    margin-left: 365px;
+  }
+  .background-image {
+    width: 365px;
+    height: 260px;
   }
 
+  .intro-section h2 {
+    font-size: 30px;
+  }
 
+  .recent-posts-box {
+    width: 383px;
+    margin-left: 8px;
+  }
 
+  .card-date {
+    font-size: 23px;
+  }
 
+  .card-post-header {
+    width: 384px;
+    height: 375px;
+  }
 
+  .card-content {
+    width: 356px;
+  }
 
+  .card-title {
+    font-size: 27px;
+  }
 
+  .description {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .section-titles-two {
+    width: 390px;
+    margin-left: 5px;
+  }
+
+  .thumbnails {
+    width: 375px;
+    height: 250px;
+    margin-left: 10px;
+  }
+}
+
+.featured {
+  margin: auto;
+}
+
+.project-title {
+  font-size: 27px;
+}
+
+.project-para {
+  font-size: 22px;
+}
+
+button {
+  height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.project-intro {
+  text-align: justify;
+  margin-left: 10px;
+}
+
+.footer-main-container {
+}
+
+.address-info {
+  margin-top: 100px;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.description-two {
+  width: 95%;
+  font-size: 18px;
+}
+
+.me {
+  width: 150px;
+  height: 150px;
+}
+
+.address,
+.email,
+.call,
+.media {
+  font-size: 22px;
+}
+
+.legal-stuff {
+  font-size: 18px;
 }
 
 /* PHONE SIZE */
@@ -534,30 +605,28 @@ margin-top: 300px;
   .me {
     width: 200px;
     height: 200px;
-  } 
+  }
 
   .featured-main-container {
-
     width: 100%;
   }
 
   .address-info {
-
     display: flex;
     flex-direction: column;
   }
 
-  .address, .email, .call, .media {
-
+  .address,
+  .email,
+  .call,
+  .media {
     color: white;
     font-size: 20px;
     font-weight: 500;
+  }
 
-}
-
-.icons {
-
+  .icons {
     width: 40px;
     height: 40px;
-}
+  }
 }
