@@ -15,7 +15,7 @@
 }
 
 .background-image {
-  height: 500px;
+  height: 400px;
   margin-top: 135px;
   border-radius: 20px;
   box-shadow: 10px 10px blue;
@@ -95,7 +95,7 @@
 }
 
 .card-content {
-  margin-left: 30px;
+  text-align: center;
 }
 
 .section-titles {
@@ -153,7 +153,14 @@ a {
 }
 
 .thumbnails {
-  width: 625px;
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 10px 10px blue;
+}
+
+.thumbnails-two {
+  margin-left: -62px;
+  width: 500px;
   border-radius: 20px;
   box-shadow: 10px 10px blue;
 }
@@ -173,7 +180,7 @@ a {
 }
 
 .project-title {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .project-para {
@@ -183,7 +190,7 @@ a {
 
 .project-year {
   align-items: center;
-  gap: 40px;
+  gap: 10px;
 }
 
 hr {
@@ -225,7 +232,7 @@ button {
   justify-content: center;
   width: 100%;
   gap: 200px;
-  height: 600px;
+  height: 500px;
   margin-top: 120px;
 }
 
@@ -267,6 +274,7 @@ button {
 .address-info {
   display: flex;
   flex-direction: column;
+  margin-top: 200px;
   gap: 20px;
 }
 
@@ -287,6 +295,7 @@ div .call {
   gap: 50px;
   display: flex;
   flex-direction: column;
+  margin-top: 200px;
 }
 
 .copyright-container {
@@ -365,16 +374,28 @@ div .call {
     width: 50%;
   }
 
+  .description {
+    margin-left: 11px;
+  }
+
   .featured-main-container {
     display: flex;
     flex-direction: column;
   }
   .thumbnails {
-    height: 300px;
+    height: 320px;
+    width: 700px;
+  }
+
+  .thumbnails-two {
+    margin-left: 0px;
+    width: 700px;
+    height: 320px;
   }
 
   .featured {
-    margin-left: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
   }
@@ -384,6 +405,10 @@ div .call {
     width: 600px;
   }
 
+  .project-para {
+    font-size: 27px;
+  }
+
   .project-year {
     display: flex;
   }
@@ -391,23 +416,23 @@ div .call {
   .footer-main-container {
     display: flex;
     flex-direction: column;
-    height: 1100px;
+    height: 1400px;
   }
 
   .grand-contact-container {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 0px;
   }
 
   .address-info {
-    margin-top: 300px;
+    margin-top: 0px;
   }
 }
 
 @media (max-width: 400px) {
   .trigram {
-    margin-left: 365px;
+    margin-left: 345px;
   }
   .background-image {
     width: 365px;
@@ -419,16 +444,17 @@ div .call {
   }
 
   .recent-posts-box {
-    width: 383px;
+    width: 365px;
     margin-left: 8px;
   }
 
   .card-date {
-    font-size: 23px;
+    font-size: 18px;
+    margin-left: -13px;
   }
 
   .card-post-header {
-    width: 384px;
+    width: 350px;
     height: 375px;
   }
 
@@ -437,36 +463,42 @@ div .call {
   }
 
   .card-title {
-    font-size: 27px;
+    font-size: 22px;
+    text-align: initial;
+    margin-left: 20px;
   }
 
   .description {
     font-size: 18px;
-    width: 90%;
+    text-align: justify;
+    margin-left: 20px;
+    width: 83%;
   }
 
   .section-titles-two {
-    width: 390px;
-    margin-left: 5px;
+    width: 335px;
+    margin-left: 33px;
+  }
+
+  .featured-main-container {
+    align-items: center;
   }
 
   .thumbnails {
-    width: 375px;
-    height: 250px;
+    width: 343px;
+    height: 236px;
+    margin-left: 10px;
+  }
+
+  .thumbnails-two {
+    width: 343px;
+    height: 236px;
     margin-left: 10px;
   }
 }
 
-.featured {
-  margin: auto;
-}
-
-.project-title {
-  font-size: 27px;
-}
-
 .project-para {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 button {
@@ -477,24 +509,10 @@ button {
 
 .project-intro {
   text-align: justify;
-  margin-left: 10px;
-}
-
-.footer-main-container {
-}
-
-.address-info {
-  margin-top: 100px;
-}
-
-.icons {
-  width: 30px;
-  height: 30px;
 }
 
 .description-two {
   width: 95%;
-  font-size: 18px;
 }
 
 .me {
@@ -507,6 +525,12 @@ button {
 .call,
 .media {
   font-size: 22px;
+}
+
+
+.footer-main-container {
+
+
 }
 
 .legal-stuff {
@@ -562,13 +586,23 @@ button {
 
   .recent-posts-box {
     width: 331px;
-    height: 1270px;
+    height: 1020px;
     margin-left: 5px;
   }
 
   .card-post-header {
-    width: 320px;
-    height: 500px;
+    width: 300px;
+    height: 365px;
+  }
+
+  .card-date {
+    font-size: 16px;
+    margin-left: -67px;
+  }
+
+  .card-title {
+    font-size: 17px;
+    margin-left: 25px;
   }
 
   .section-titles-two {
@@ -576,14 +610,30 @@ button {
     margin-left: 25px;
   }
 
-  .thumbnails {
-    width: 300px;
+  .thumbnails, .thumbnails-two {
+    width: 326px;
     height: 200px;
     margin-left: -50px;
   }
 
-  .description-two {
+
+  .featured {
+    margin-left: 65px;
+  }
+
+  .description {
+    font-size: 20px;
+    text-align: center;
+    width: 78%;
+    margin-left: 5px;
+  }
+
+  .description-two, .featured-main-container {
     width: 100%;
+  }
+
+  a {
+    margin-left: -65px;
   }
 
   .project-intro {
@@ -591,11 +641,11 @@ button {
   }
 
   .project-title {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .project-para {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .project-year {
@@ -603,17 +653,19 @@ button {
   }
 
   .me {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
 
-  .featured-main-container {
-    width: 100%;
-  }
 
   .address-info {
     display: flex;
     flex-direction: column;
+  }
+
+  .call {
+
+    margin-left: 88px;
   }
 
   .address,
@@ -629,4 +681,6 @@ button {
     width: 40px;
     height: 40px;
   }
+
+
 }
